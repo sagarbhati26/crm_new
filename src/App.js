@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Dashboard from './Dashboard';
+import axios from 'axios';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Sidebar from './Sidebar';
+import Navbar from './Navbar';
+ 
+axios.defaults.baseURL= 'http://192.168.0.110:3000'
 
-export default App;
+function App(){
+ 
+
+        return (
+            <div >
+              <Navbar/>
+                <div className="container-fluid" id="main">
+                 <div className="row row-offcanvas row-offcanvas-left">
+                   <Sidebar/>
+                <Dashboard/>
+                
+             </div>
+            </div>  
+        </div>  
+        );
+    }
+  
+export default App
