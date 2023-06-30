@@ -1,11 +1,10 @@
 import React from 'react';
 import Dashboard from './Dashboard';
 import axios from 'axios';
-
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
  
-axios.defaults.baseURL= 'http://192.168.0.110:3000'
+axios.defaults.baseURL= 'http://localhost:3000'
 
 function App(){
  

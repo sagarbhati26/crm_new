@@ -16,6 +16,6 @@ app.get('/student', (req, res) => {
   res.send(studentName);
 });
 
-app.listen(5000, () => {
+app.listen(5000,() => {
   console.log('Server is running on port 5000');
 });

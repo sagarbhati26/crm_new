@@ -11,8 +11,6 @@ const Header = () => {
     </div>
     <div className="header-right">
       <span className="material-icons-outlined">notifications</span>
-      <span className="material-icons-outlined">email</span>
-      <span className="material-icons-outlined">account_circle</span>
     </div>
   </header></div>
   )
